@@ -1,0 +1,56 @@
+.title {
+    background-image: linear-gradient(rgba(39, 36, 41, 0.7), rgba(0, 0, 0, 0.7)), url(/images/img-1.jpg);
+    height:100vh;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title-text {
+    color: white;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+.title-text h1 {
+    font-size: 50px;
+}
+
+.title-text p {
+    font-size: 30px;
+}
+.cold{
+    font-size: 30px;
+}
+.doc{
+    height:100vh;
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+a.hos{
+    font-size: 25px;
+}
+
+
+.infect_one:hover {
+    background-color: rgb(237, 226, 243);
+    
+    transition: 0.5s;
+    color:rgb(129, 122, 122);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+    transform: scale(1.05);
+}
+@media all and (max-width:480px)and(min-width:0px) {
+    .title {
+      background-size: 100%;
+    }
+    .title-text h1 {
+        font-size: 30px;
+    }
+    
+    .title-text p {
+        font-size: 10px;
+  }}
+  

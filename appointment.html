@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="./images/logo.jpg"/>
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Healthcare Management</title>
+</head>
+<body data-spy="scroll" data-target="#main-nav" id="home" style="cursor:auto;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Healthcare</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link ">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="local_infection.html" class="nav-link ">Local infections</a>
+              </li>
+              <li class="nav-item">
+                <a href="hospital.html" class="nav-link active">Hospitals</a>
+              </li>
+              <li class="nav-item">
+                <a href="covid.html" class="nav-link">Covid-19</a>
+              </li>
+              <li class="nav-item">
+                <a href="appointment.html" class="nav-link">Appoinment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+      <section id="appointment"><br><br>
+        <div class="container-fluid bg-dark">
+         <div class="row">
+           <div class="col-lg-6 col-sm-12 col-md-4 ">
+            <div class="card bg-dark text-center card-form">
+              <div class="card-body">
+                <h3 class="text-white">Appointment</h3>
+                <p class="text-white">Please fill this form to get appointment</p>
+                <form action="resume.php" method="get">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="place" placeholder="Place">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="hospital" placeholder="Hospital Name ">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="dept" placeholder="Department">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control form-control-lg" name="mobile" placeholder="Mobile">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="time" placeholder="Time">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="count" placeholder="Visit Count">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="specialist" placeholder="Specialist Name">
+                  </div>
+                  <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-md-4 ">
+            <div class="card bg-dark text-center card-form">
+              <div class="card-body">
+                <img src="images/img-2.jpg" class="img-fluid doc">
+              </div>
+            </div>
+          </div>
+          
+         </div>
+        </div>
+        </section>
+
+      <footer id="main-footer" class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center py-4">
+              <h3 class="text-white">Healthcare Management</h3>
+              <p class="text-white">Copyright © <span id="year">2020</span></p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                Contact Us
+              </button>
+              <h5 class="text-white">Kaviya Priya P - 9361368278</h5>
+            <h5 class="text-white">Suthir S - 6383909331</h5>
+            <h5 class="text-white">Kavimathi P R - 9360572633</h5>
+            <h5 class="text-white">Kalaiyarasan C - 9360247187</h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"
+        ></script>
+</body>
+</html>
